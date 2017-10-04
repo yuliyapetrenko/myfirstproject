@@ -5,10 +5,10 @@ body {
 
 .container {
   max-width: 1200px;
-  width: 600px;
+  width: 646px;
   font-size: 8px;
-  color: white;
-  margin-left: 220px;
+  color: #ffffff;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
 
@@ -22,6 +22,7 @@ body {
 
 .header__logo {
   margin-left: 0;
+  text-transform: uppercase;
 }
 
 .header__menu {
@@ -35,6 +36,7 @@ body {
   padding-left: 8px;
   padding-right: 8px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .header__menu-item_active {
@@ -47,6 +49,10 @@ body {
 
 }
 
+.intro__head {
+  text-transform: uppercase;
+}
+
 .intro__text {
   color: #BBBEC3;
   line-height: 20px;
@@ -55,6 +61,10 @@ body {
 .intro__link {
   color: #72B4D6;
   text-decoration: none;
+}
+
+.intro__link:hover {
+  text-decoration: underline;
 }
 
 .intro-icons {
@@ -70,4 +80,52 @@ body {
   height: 20px;
   margin-right: 30px;
   margin-top: 30px;
+}
+
+.projects {
+  width: 48%;
+  background-color: #464950;
+  margin-top: 65px;
+  float: left;
+}
+
+.projects__head {
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.projects__text {
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 15px;
+  padding-bottom: 15px;
+}
+
+.journal {
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #A65CBE;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: 	#ffffff;
+}
+
+.photos {
+  width: 48%;
+  padding-top: 65px;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos__pic {
+  width: 135px;
+  height: 100px;
+  border: 1px solid #000000;
+  margin-bottom: 15px;
+  margin-right: 15px;
 }
