@@ -1,15 +1,29 @@
 body {
   background: #32353a;
   font-family: 'Encode Sans Expanded', sans-serif;
+  margin: 0;
+}
+
+.header__menu-toggle {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: url("static/img/menu.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.header__menu-toggle:hover {
+  opacity: 1;
 }
 
 .container {
   max-width: 646px;
-
   font-size: 8px;
   color: #ffffff;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding: 0 24px 24px 40px;
 }
 
 .header {
@@ -141,4 +155,14 @@ body {
 .content-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-toggle {
+    display: block;
+  }
 }
